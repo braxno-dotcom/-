@@ -107,6 +107,29 @@
             font-size: 0.9em;
         }
         .toc a:hover { text-decoration: underline; }
+        .knots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .knot-card {
+            background: #0d1f3c;
+            border: 1px solid #1e3a5f;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        .knot-card h3 {
+            font-size: 0.8em;
+            margin: 0 0 6px;
+            color: #5cb8ff;
+        }
+        .knot-svg {
+            width: 100%;
+            max-width: 160px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -402,6 +425,111 @@ ___/ Киль (Keel) .                                  \___/
     <tr><td>Рифовый (бантик)</td><td>Reef knot</td><td>Рифление / связка одинаковых концов (fr: nœud de ris)</td></tr>
     <tr><td>Выбленочный</td><td>Clove hitch</td><td>Крепление к рангоуту (fr: nœud de cabestan)</td></tr>
 </table>
+
+<div class="knots-grid">
+
+<!-- Булинь / Bowline -->
+<div class="knot-card">
+<h3>Булинь (Bowline)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <path d="M100 180 L100 130 C100 110 80 100 80 80 C80 55 105 50 110 65 C115 50 140 55 140 80 C140 100 120 105 115 120 L115 100 C115 90 130 85 130 75 C130 65 118 60 112 70 L108 78 L104 70 C98 60 86 65 86 75 C86 85 100 90 100 100 L100 130"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M100 130 C85 130 75 120 75 110 C75 95 90 90 100 100"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="180" r="4" fill="#5cb8ff"/>
+  <text x="100" y="25" text-anchor="middle" fill="#7ec8ff" font-size="11">незатягивающаяся</text>
+  <text x="100" y="38" text-anchor="middle" fill="#7ec8ff" font-size="11">петля</text>
+</svg>
+</div>
+
+<!-- Восьмёрка / Figure-eight -->
+<div class="knot-card">
+<h3>Восьмёрка (Figure-eight)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <path d="M100 30 L100 50 C100 60 130 70 130 90 C130 110 100 110 100 110 C100 110 70 110 70 130 C70 150 100 160 100 160 L100 180"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M85 70 C85 70 115 90 115 90" stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <!-- Redraw cleaner figure-8 -->
+  <path d="M100 25 C100 25 100 45 100 55 C100 70 135 75 135 95 C135 115 100 115 100 115 C100 115 65 115 65 135 C65 155 100 160 100 170 L100 185"
+        stroke="#66d9ef" stroke-width="5" fill="none" stroke-linecap="round" opacity="0"/>
+  <text x="100" y="15" text-anchor="middle" fill="#7ec8ff" font-size="11">стопорный узел</text>
+</svg>
+</div>
+
+<!-- Штык / Cleat hitch -->
+<div class="knot-card">
+<h3>Штык (Cleat hitch)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <!-- Cleat shape -->
+  <rect x="70" y="95" width="60" height="14" rx="3" fill="#2a4a6a" stroke="#4a7a9a" stroke-width="1.5"/>
+  <rect x="60" y="88" width="10" height="28" rx="3" fill="#2a4a6a" stroke="#4a7a9a" stroke-width="1.5"/>
+  <rect x="130" y="88" width="10" height="28" rx="3" fill="#2a4a6a" stroke="#4a7a9a" stroke-width="1.5"/>
+  <!-- Rope around cleat -->
+  <path d="M100 180 L100 115 L65 95 L135 108 L65 108 L135 95 L100 88 L100 30"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="100" cy="180" r="3" fill="#5cb8ff"/>
+  <circle cx="100" cy="30" r="3" fill="#5cb8ff"/>
+  <text x="100" y="15" text-anchor="middle" fill="#7ec8ff" font-size="11">крепление на утку</text>
+</svg>
+</div>
+
+<!-- Шкотовый / Sheet bend -->
+<div class="knot-card">
+<h3>Шкотовый (Sheet bend)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <!-- Thick rope (bight) -->
+  <path d="M50 120 C50 120 50 70 100 70 C150 70 150 120 150 120"
+        stroke="#f0c040" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Thin rope through -->
+  <path d="M170 130 L120 100 C110 95 90 95 80 100 L60 110 C50 115 50 100 70 90 L120 90 C140 90 150 100 140 110 L100 140 L60 170"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="170" cy="130" r="3" fill="#5cb8ff"/>
+  <circle cx="60" cy="170" r="3" fill="#5cb8ff"/>
+  <text x="100" y="25" text-anchor="middle" fill="#7ec8ff" font-size="10">соединение разных</text>
+  <text x="100" y="38" text-anchor="middle" fill="#7ec8ff" font-size="10">по толщине верёвок</text>
+</svg>
+</div>
+
+<!-- Рифовый / Reef knot -->
+<div class="knot-card">
+<h3>Рифовый (Reef knot)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <!-- Left rope -->
+  <path d="M20 110 L70 110 C85 110 90 95 100 95 C110 95 115 110 130 110 L180 110"
+        stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Right rope -->
+  <path d="M20 100 L70 100 C85 100 90 115 100 115 C110 115 115 100 130 100 L180 100"
+        stroke="#f0c040" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Crossing indicators -->
+  <circle cx="88" cy="105" r="8" fill="#0a1628" stroke="none"/>
+  <path d="M80 100 C85 100 88 108 95 110" stroke="#f0c040" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="112" cy="105" r="8" fill="#0a1628" stroke="none"/>
+  <path d="M105 110 C112 108 115 100 120 100" stroke="#f0c040" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="100" y="75" text-anchor="middle" fill="#7ec8ff" font-size="11">право — лево — право</text>
+  <text x="100" y="145" text-anchor="middle" fill="#a0b4c8" font-size="10">= бантик</text>
+</svg>
+</div>
+
+<!-- Выбленочный / Clove hitch -->
+<div class="knot-card">
+<h3>Выбленочный (Clove hitch)</h3>
+<svg viewBox="0 0 200 200" class="knot-svg">
+  <!-- Pole -->
+  <rect x="90" y="40" width="20" height="140" rx="10" fill="#2a4a6a" stroke="#4a7a9a" stroke-width="1.5"/>
+  <!-- Rope wrapping around pole -->
+  <path d="M30 80 L85 100 " stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M115 100 C130 105 140 115 130 125 C120 135 105 130 90 125" stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M90 125 L85 123" stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M115 123 C130 128 145 138 135 148 C125 158 100 155 80 150 L30 140" stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Top part going behind -->
+  <path d="M85 100 C70 105 60 115 70 125 C80 135 95 130 115 123" stroke="#5cb8ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="30" cy="80" r="3" fill="#5cb8ff"/>
+  <circle cx="30" cy="140" r="3" fill="#5cb8ff"/>
+  <text x="100" y="25" text-anchor="middle" fill="#7ec8ff" font-size="11">крепление к рангоуту</text>
+</svg>
+</div>
+
+</div>
 
 <hr>
 
