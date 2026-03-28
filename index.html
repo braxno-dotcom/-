@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шпаргалка по устройству яхты</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0a1628;
+            color: #e0e8f0;
+            padding: 16px;
+            line-height: 1.5;
+        }
+        h1 {
+            text-align: center;
+            color: #5cb8ff;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1e3a5f;
+        }
+        h2 {
+            color: #4da6ff;
+            font-size: 1.2em;
+            margin: 24px 0 12px;
+            padding: 8px 12px;
+            background: #112240;
+            border-left: 4px solid #5cb8ff;
+            border-radius: 4px;
+        }
+        h3 {
+            color: #7ec8ff;
+            font-size: 1em;
+            margin: 16px 0 8px;
+        }
+        p {
+            margin: 8px 0;
+            color: #a0b4c8;
+        }
+        pre {
+            background: #0d1f3c;
+            border: 1px solid #1e3a5f;
+            border-radius: 8px;
+            padding: 12px;
+            overflow-x: auto;
+            font-size: 0.65em;
+            line-height: 1.3;
+            color: #8fbcda;
+            margin: 12px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        th {
+            background: #1a3355;
+            color: #5cb8ff;
+            padding: 8px 6px;
+            text-align: left;
+            border-bottom: 2px solid #2a5080;
+            position: sticky;
+            top: 0;
+        }
+        td {
+            padding: 6px;
+            border-bottom: 1px solid #152a4a;
+        }
+        tr:hover td { background: #112240; }
+        td:first-child { font-weight: 600; color: #e0e8f0; }
+        td:nth-child(2) { color: #66d9ef; font-style: italic; }
+        hr {
+            border: none;
+            border-top: 1px solid #1e3a5f;
+            margin: 20px 0;
+        }
+        .note {
+            background: #1a2a44;
+            border-left: 4px solid #f0c040;
+            padding: 10px 12px;
+            border-radius: 4px;
+            margin: 16px 0;
+            font-size: 0.9em;
+            color: #d0d8e0;
+        }
+        .toc {
+            background: #112240;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+        }
+        .toc a {
+            color: #5cb8ff;
+            text-decoration: none;
+            display: block;
+            padding: 4px 0;
+            font-size: 0.9em;
+        }
+        .toc a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<h1>Шпаргалка по устройству парусной яхты</h1>
+
+<div class="toc">
+    <a href="#schema">1. Общая схема яхты</a>
+    <a href="#sail-parts">2. Части паруса</a>
+    <a href="#sails">3. Паруса</a>
+    <a href="#standing">4. Стоячий такелаж</a>
+    <a href="#running">5. Бегучий такелаж</a>
+    <a href="#spars">6. Рангоут</a>
+    <a href="#hull">7. Корпус яхты</a>
+    <a href="#courses">8. Курсы относительно ветра</a>
+    <a href="#maneuvers">9. Маневры</a>
+    <a href="#knots">10. Морские узлы</a>
+    <a href="#deck">11. Палубное оборудование</a>
+</div>
+
+<!-- 1. СХЕМА -->
+<h2 id="schema">1. Общая схема яхты (вид сбоку)</h2>
+<pre>
+                      Топ мачты
+                         /\
+                        /  \
+                       /    \        Грот (Mainsail)
+            Стаксель /      \       главный парус
+           (Jib)    /    .---\-----------------------+
+                    /  .' Латы \                      |
+                   / .'  (Battens)\   Задняя шкаторина|
+                  /.'              \  (Leech)         |
+                 /. Передняя        \                 |
+       Передняя/ . шкаторина грота   \                |
+      шкаторина .  (Luff)             \  Гик (Boom)   |
+      стакселя/ .                ======\===============+
+      (Luff) /  .               |       \
+            /   . МАЧТА (Mast)  |        \
+           /    .               |   Кокпит \
+          /     .               |    ===    \___________
+ ________/______._______________| __|___|__/            |
+/  Нос (Bow)    .     Корпус (Hull)        Корма (Stern)|
+/   _____________.__________________________________     |
+___/ Киль (Keel) .                                  \___/
+   \            .          Ватерлиния               /
+    \___________. ________________________________/
+            |   .   |
+            |  Балласт (Ballast)
+            +---+
+          Перо руля (Rudder blade)
+</pre>
+
+<!-- 2. ЧАСТИ ПАРУСА -->
+<h2 id="sail-parts">2. Части паруса</h2>
+<pre>
+    Фаловый угол (Head)
+          /\
+         /  \
+        /    \
+       / Перед-\
+      / няя     \ Задняя шкаторина
+      / шкато-   \  (Leech)
+     /   рина     \
+    /   (Luff)     \
+   /    Полотнище   \
+  /     паруса       \
+ /    (Sail cloth)    \
+/                      \
+/  Латкарман ------>>   \  ← Латы (Battens)
+/   (Batten pocket)      \
+/____________________________\
+Галсовый   Нижняя       Шкотовый
+угол     шкаторина         угол
+(Tack)   (Foot)          (Clew)
+</pre>
+
+<h3>Три угла паруса:</h3>
+<table>
+    <tr><th>Угол</th><th>English</th><th>Где находится</th></tr>
+    <tr><td>Фаловый угол</td><td>Head</td><td>Верхний угол (к нему крепится фал)</td></tr>
+    <tr><td>Галсовый угол</td><td>Tack</td><td>Нижний передний угол</td></tr>
+    <tr><td>Шкотовый угол</td><td>Clew</td><td>Нижний задний угол (к нему крепится шкот)</td></tr>
+</table>
+
+<h3>Три стороны (шкаторины) паруса:</h3>
+<table>
+    <tr><th>Шкаторина</th><th>English</th><th>Где находится</th></tr>
+    <tr><td>Передняя</td><td>Luff</td><td>Сторона у мачты / штага</td></tr>
+    <tr><td>Задняя</td><td>Leech</td><td>Свободная задняя кромка</td></tr>
+    <tr><td>Нижняя</td><td>Foot</td><td>Нижняя сторона (у грота — вдоль гика)</td></tr>
+</table>
+
+<hr>
+
+<!-- 3. ПАРУСА -->
+<h2 id="sails">3. Паруса</h2>
+
+<h3>Основные паруса:</h3>
+<table>
+    <tr><th>Парус</th><th>English</th><th>Назначение</th></tr>
+    <tr><td>Грот</td><td>Mainsail</td><td>Главный парус, за мачтой</td></tr>
+    <tr><td>Стаксель</td><td>Jib / Staysail</td><td>Передний парус на штаге</td></tr>
+    <tr><td>Генуя</td><td>Genoa</td><td>Большой стаксель, перекрывает грот</td></tr>
+    <tr><td>Спинакер</td><td>Spinnaker</td><td>Симметричный парус для попутных курсов</td></tr>
+    <tr><td>Геннакер</td><td>Gennaker</td><td>Асимметричный спинакер</td></tr>
+</table>
+
+<h3>Штормовые паруса:</h3>
+<table>
+    <tr><th>Парус</th><th>English</th><th>Назначение</th></tr>
+    <tr><td>Штормовой стаксель</td><td>Storm jib</td><td>Маленький стаксель для шторма</td></tr>
+    <tr><td>Трисель</td><td>Trysail</td><td>Маленький грот для шторма (без гика)</td></tr>
+</table>
+
+<hr>
+
+<!-- 4. СТОЯЧИЙ ТАКЕЛАЖ -->
+<h2 id="standing">4. Стоячий такелаж (Standing rigging)</h2>
+<p>Неподвижные тросы/проволока, удерживающие мачту.</p>
+
+<pre>
+          Топ мачты
+         /  |   \
+        /   |    \         Вид спереди:
+       /    |     \
+ Бакштаг Ахтерштаг Бакштаг    Ванты  Мачта  Ванты
+ (Backstay - идёт              \  |  |  /
+  назад)                        \ |  | /
+      /     |      \             \|  |/
+     /   Форштаг    \      =======+==+======
+    /    (Forestay)  \          Корпус
+   /      - идёт     \
+  /        вперёд      \
+Ванты                  Ванты
+(Shrouds)             (Shrouds)
+</pre>
+
+<table>
+    <tr><th>Элемент</th><th>English</th><th>Функция</th></tr>
+    <tr><td>Форштаг</td><td>Forestay / Headstay</td><td>Трос от топа мачты к носу, держит мачту вперёд</td></tr>
+    <tr><td>Ахтерштаг</td><td>Backstay</td><td>Трос от топа мачты к корме</td></tr>
+    <tr><td>Ванты</td><td>Shrouds</td><td>Тросы по бокам, держат мачту от бокового наклона</td></tr>
+    <tr><td>Бакштаги</td><td>Running backstays</td><td>Дополнительные задние оттяжки (не на всех яхтах)</td></tr>
+    <tr><td>Краспицы</td><td>Spreaders</td><td>Распорки на мачте, разводят ванты в стороны</td></tr>
+    <tr><td>Путенсы</td><td>Chainplates</td><td>Крепления вант к корпусу</td></tr>
+</table>
+
+<hr>
+
+<!-- 5. БЕГУЧИЙ ТАКЕЛАЖ -->
+<h2 id="running">5. Бегучий такелаж (Running rigging)</h2>
+<p>Подвижные снасти для управления парусами.</p>
+
+<table>
+    <tr><th>Снасть</th><th>English</th><th>Функция</th></tr>
+    <tr><td>Грота-фал</td><td>Main halyard</td><td>Поднимает грот</td></tr>
+    <tr><td>Стаксель-фал</td><td>Jib halyard</td><td>Поднимает стаксель</td></tr>
+    <tr><td>Спинакер-фал</td><td>Spinnaker halyard</td><td>Поднимает спинакер</td></tr>
+    <tr><td>Грота-шкот</td><td>Mainsheet</td><td>Управляет углом грота (через гик)</td></tr>
+    <tr><td>Стаксель-шкот</td><td>Jib sheet</td><td>Управляет углом стакселя</td></tr>
+    <tr><td>Оттяжка гика</td><td>Boom vang / Kicker</td><td>Тянет гик вниз, контролирует twist</td></tr>
+    <tr><td>Каретка грота-шкота</td><td>Mainsheet traveller</td><td>Перемещает точку крепления шкота по ширине</td></tr>
+    <tr><td>Топенант</td><td>Topping lift</td><td>Поддерживает гик сверху</td></tr>
+    <tr><td>Завал-тали</td><td>Cunningham</td><td>Натягивает переднюю шкаторину грота</td></tr>
+    <tr><td>Риф-шкентель</td><td>Reefing line</td><td>Уменьшает площадь паруса (рифление)</td></tr>
+    <tr><td>Брас</td><td>Guy / Brace</td><td>Управляет спинакер-гиком</td></tr>
+</table>
+
+<hr>
+
+<!-- 6. РАНГОУТ -->
+<h2 id="spars">6. Рангоут (Spars)</h2>
+
+<table>
+    <tr><th>Элемент</th><th>English</th><th>Что это</th></tr>
+    <tr><td>Мачта</td><td>Mast</td><td>Вертикальная колонна для парусов</td></tr>
+    <tr><td>Гик</td><td>Boom</td><td>Горизонтальная балка внизу грота</td></tr>
+    <tr><td>Спинакер-гик</td><td>Spinnaker pole</td><td>Шест для растяжки спинакера</td></tr>
+    <tr><td>Бушприт</td><td>Bowsprit</td><td>Выступающий за нос шест (для геннакера)</td></tr>
+    <tr><td>Гафель</td><td>Gaff</td><td>Верхняя балка у гафельных парусов</td></tr>
+</table>
+
+<hr>
+
+<!-- 7. КОРПУС -->
+<h2 id="hull">7. Корпус яхты</h2>
+
+<pre>
+     Нос (Bow)
+       _/\_
+      /    \       Правый борт = ШТИРБОРТ (Starboard)
+     /      \      → зелёный огонь
+    / Бак    \
+   / (Foredeck)\
+  /             \
+ |   Рубка       |
+ |  (Cabin top)   |
+ |                |
+ |   Кокпит       |  ← Левый борт = БОРТ (Port)
+ |  (Cockpit)     |     → красный огонь
+ |                |
+  \  Транец      /
+   \ (Transom)  /
+    \__________/
+    Корма (Stern)
+</pre>
+
+<table>
+    <tr><th>Термин</th><th>English</th><th>Значение</th></tr>
+    <tr><td>Нос</td><td>Bow</td><td>Передняя часть</td></tr>
+    <tr><td>Корма</td><td>Stern</td><td>Задняя часть</td></tr>
+    <tr><td>Транец</td><td>Transom</td><td>Плоская задняя стенка</td></tr>
+    <tr><td>Левый борт (ЛБ)</td><td>Port</td><td>Левая сторона (если смотреть к носу)</td></tr>
+    <tr><td>Правый борт (ПБ)</td><td>Starboard</td><td>Правая сторона</td></tr>
+    <tr><td>Бак</td><td>Foredeck</td><td>Передняя палуба</td></tr>
+    <tr><td>Кокпит</td><td>Cockpit</td><td>Открытая часть для экипажа</td></tr>
+    <tr><td>Рубка</td><td>Cabin / Coachroof</td><td>Надстройка над каютой</td></tr>
+    <tr><td>Киль</td><td>Keel</td><td>Подводный плавник с балластом</td></tr>
+    <tr><td>Перо руля</td><td>Rudder blade</td><td>Подводная поворотная плоскость</td></tr>
+    <tr><td>Баллер руля</td><td>Rudder stock</td><td>Ось вращения руля</td></tr>
+    <tr><td>Румпель</td><td>Tiller</td><td>Рычаг управления рулём</td></tr>
+    <tr><td>Штурвал</td><td>Wheel / Helm</td><td>Колесо управления рулём</td></tr>
+    <tr><td>Ватерлиния</td><td>Waterline</td><td>Линия на границе воды</td></tr>
+    <tr><td>Привальный брус</td><td>Rub rail</td><td>Защитная полоса по борту</td></tr>
+</table>
+
+<hr>
+
+<!-- 8. КУРСЫ -->
+<h2 id="courses">8. Курсы относительно ветра</h2>
+
+<pre>
+              ВЕТЕР (Wind)
+                |
+                |
+                v
+        Левентик (In irons)
+       ~~ нет хода ~~
+           /      \
+          /        \
+      Бейдевинд   Бейдевинд     ~45°
+     (Close-hauled)
+        /            \
+       /              \
+   Галфвинд        Галфвинд     ~90°
+   (Beam reach)
+     /                  \
+    /                    \
+Бакштаг              Бакштаг     ~135°
+(Broad reach)
+  /                        \
+ /                          \
+      Фордевинд                  180°
+     (Running / Dead run)
+</pre>
+
+<table>
+    <tr><th>Курс</th><th>English</th><th>Угол к ветру</th></tr>
+    <tr><td>Левентик</td><td>In irons / Head to wind</td><td>0° (прямо на ветер, нет хода)</td></tr>
+    <tr><td>Крутой бейдевинд</td><td>Close-hauled</td><td>~30-45°</td></tr>
+    <tr><td>Полный бейдевинд</td><td>Close reach</td><td>~45-60°</td></tr>
+    <tr><td>Галфвинд</td><td>Beam reach</td><td>~90°</td></tr>
+    <tr><td>Бакштаг</td><td>Broad reach</td><td>~120-150°</td></tr>
+    <tr><td>Фордевинд</td><td>Running / Dead run</td><td>~180° (ветер строго сзади)</td></tr>
+</table>
+
+<hr>
+
+<!-- 9. МАНЕВРЫ -->
+<h2 id="maneuvers">9. Маневры</h2>
+
+<table>
+    <tr><th>Маневр</th><th>English</th><th>Описание</th></tr>
+    <tr><td>Оверштаг</td><td>Tacking</td><td>Поворот носом через ветер</td></tr>
+    <tr><td>Фордевинд (поворот)</td><td>Gybing / Jibing</td><td>Поворот кормой через ветер (осторожно — гик!)</td></tr>
+    <tr><td>Рифление</td><td>Reefing</td><td>Уменьшение площади паруса</td></tr>
+    <tr><td>Лавировка</td><td>Beating / Windward sailing</td><td>Движение к ветру зигзагами</td></tr>
+    <tr><td>Приведение</td><td>Luffing / Heading up</td><td>Поворот ближе к ветру</td></tr>
+    <tr><td>Уваливание</td><td>Bearing away</td><td>Поворот дальше от ветра</td></tr>
+</table>
+
+<hr>
+
+<!-- 10. УЗЛЫ -->
+<h2 id="knots">10. Морские узлы (основные)</h2>
+
+<table>
+    <tr><th>Узел</th><th>English</th><th>Применение</th></tr>
+    <tr><td>Булинь</td><td>Bowline</td><td>Незатягивающаяся петля</td></tr>
+    <tr><td>Восьмёрка</td><td>Figure-eight</td><td>Стопорный узел на конце шкота</td></tr>
+    <tr><td>Штык</td><td>Cleat hitch</td><td>Крепление на утку</td></tr>
+    <tr><td>Шкотовый</td><td>Sheet bend</td><td>Соединение двух верёвок разной толщины</td></tr>
+    <tr><td>Рифовый (бантик)</td><td>Reef knot</td><td>Рифление / связка одинаковых концов</td></tr>
+    <tr><td>Выбленочный</td><td>Clove hitch</td><td>Крепление к рангоуту</td></tr>
+</table>
+
+<hr>
+
+<!-- 11. ПАЛУБНОЕ ОБОРУДОВАНИЕ -->
+<h2 id="deck">11. Палубное оборудование</h2>
+
+<table>
+    <tr><th>Элемент</th><th>English</th><th>Функция</th></tr>
+    <tr><td>Лебёдка (Винч)</td><td>Winch</td><td>Выбирает шкоты/фалы с усилием</td></tr>
+    <tr><td>Утка</td><td>Cleat</td><td>Фиксирует конец (верёвку)</td></tr>
+    <tr><td>Блок</td><td>Block / Pulley</td><td>Направляет и облегчает тягу</td></tr>
+    <tr><td>Стопор</td><td>Clutch / Jammer</td><td>Зажимает конец без утки</td></tr>
+    <tr><td>Кнехт</td><td>Bollard</td><td>Швартовная тумба</td></tr>
+    <tr><td>Киповая планка</td><td>Fairlead</td><td>Направляет верёвку через фальшборт</td></tr>
+    <tr><td>Релинг</td><td>Lifeline / Guardrail</td><td>Ограждение палубы</td></tr>
+    <tr><td>Леерное ограждение</td><td>Stanchion + lifeline</td><td>Стойки + тросы безопасности</td></tr>
+    <tr><td>Люк</td><td>Hatch</td><td>Проём в палубе</td></tr>
+    <tr><td>Степс</td><td>Mast step</td><td>Основание мачты</td></tr>
+</table>
+
+<hr>
+
+<div class="note">
+    <strong>Мнемоника:</strong> «Левый — красный» (оба слова содержат букву «Е»).<br>
+    Штирборт (правый) — зелёный огонь, порт (левый) — красный.
+</div>
+
+</body>
+</html>
