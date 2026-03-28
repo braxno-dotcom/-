@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#0a1628"/>
+  <!-- Water waves -->
+  <path d="M0 350 Q128 320 256 340 Q384 360 512 330 L512 512 L0 512Z" fill="#1a3a6a"/>
+  <path d="M0 380 Q128 355 256 370 Q384 385 512 360 L512 512 L0 512Z" fill="#142d55"/>
+  <!-- Hull -->
+  <path d="M135 335 L375 335 L345 375 L155 375 L125 355Z" fill="#e0e0e0"/>
+  <path d="M135 335 L375 335 L345 375 L155 375 L125 355Z" stroke="#8ab4d8" stroke-width="2" fill="none"/>
+  <!-- Mast -->
+  <line x1="235" y1="330" x2="235" y2="75" stroke="#b0c4d8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Mainsail -->
+  <path d="M240 85 L240 315 L360 315Z" fill="#4da6ff" opacity="0.85"/>
+  <path d="M240 85 L240 315 L360 315Z" stroke="#3a8ed4" stroke-width="2" fill="none"/>
+  <!-- Jib -->
+  <path d="M230 95 L230 300 L145 300Z" fill="#ffffff" opacity="0.75"/>
+  <path d="M230 95 L230 300 L145 300Z" stroke="#8ab4d8" stroke-width="1.5" fill="none"/>
+  <!-- Boom -->
+  <line x1="235" y1="315" x2="360" y2="315" stroke="#b0c4d8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Small flag -->
+  <path d="M235 75 L260 85 L235 95" fill="#ff6060"/>
+</svg>

@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шпаргалка по устройству яхты</title>
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" id="apple-icon" href="icon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a1628">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Яхта">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -422,5 +429,20 @@ ___/ Киль (Keel) .                                  \___/
     Штирборт (правый) — зелёный огонь, порт (левый) — красный.
 </div>
 
+<script>
+// Generate PNG icon for iOS home screen
+(function(){
+  var img = new Image();
+  img.onload = function(){
+    var c = document.createElement('canvas');
+    c.width = 180; c.height = 180;
+    var ctx = c.getContext('2d');
+    ctx.drawImage(img, 0, 0, 180, 180);
+    var link = document.getElementById('apple-icon');
+    if(link) link.href = c.toDataURL('image/png');
+  };
+  img.src = 'icon.svg';
+})();
+</script>
 </body>
 </html>
