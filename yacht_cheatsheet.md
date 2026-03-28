@@ -60,37 +60,37 @@
 ```
 
 ### Три угла паруса:
-| Угол | English | Где находится |
-|------|---------|---------------|
-| **Фаловый угол** | Head | Верхний угол (к нему крепится фал) |
-| **Галсовый угол** | Tack | Нижний передний угол |
-| **Шкотовый угол** | Clew | Нижний задний угол (к нему крепится шкот) |
+| Угол | English | Location |
+|------|---------|----------|
+| **Фаловый угол** | Head | Top corner (halyard attaches here) |
+| **Галсовый угол** | Tack | Lower forward corner |
+| **Шкотовый угол** | Clew | Lower aft corner (sheet attaches here) |
 
 ### Три стороны (шкаторины) паруса:
-| Шкаторина | English | Где находится |
-|-----------|---------|---------------|
-| **Передняя** (Luff) | Luff | Сторона у мачты / штага |
-| **Задняя** (Ликтрос) | Leech | Свободная задняя кромка |
-| **Нижняя** | Foot | Нижняя сторона (у грота - вдоль гика) |
+| Шкаторина | English | Location |
+|-----------|---------|----------|
+| **Передняя** (Luff) | Luff | Edge along the mast / forestay |
+| **Задняя** (Ликтрос) | Leech | Free trailing edge |
+| **Нижняя** | Foot | Bottom edge (on mainsail — along the boom) |
 
 ---
 
 ## 3. Паруса
 
 ### Основные паруса:
-| Парус | English | Назначение |
-|-------|---------|------------|
-| **Грот** | Mainsail | Главный парус, за мачтой |
-| **Стаксель** | Jib / Staysail | Передний парус на штаге |
-| **Генуя** | Genoa | Большой стаксель, перекрывает грот |
-| **Спинакер** | Spinnaker | Симметричный парус для попутных курсов |
-| **Геннакер** | Gennaker | Асимметричный спинакер |
+| Парус | English | Purpose |
+|-------|---------|---------|
+| **Грот** | Mainsail | Main sail, set aft of the mast |
+| **Стаксель** | Jib / Staysail | Headsail set on the forestay |
+| **Генуя** | Genoa | Large jib that overlaps the mainsail |
+| **Спинакер** | Spinnaker | Symmetrical downwind sail |
+| **Геннакер** | Gennaker | Asymmetrical spinnaker |
 
 ### Штормовые паруса:
-| Парус | English | Назначение |
-|-------|---------|------------|
-| **Штормовой стаксель** | Storm jib | Маленький стаксель для шторма |
-| **Трисель** | Trysail | Маленький грот для шторма (без гика) |
+| Парус | English | Purpose |
+|-------|---------|---------|
+| **Штормовой стаксель** | Storm jib | Small headsail for heavy weather |
+| **Трисель** | Trysail | Small mainsail for storms (no boom) |
 
 ---
 
@@ -115,14 +115,14 @@
   (Shrouds)             (Shrouds)
 ```
 
-| Элемент | English | Функция |
-|---------|---------|---------|
-| **Форштаг** | Forestay / Headstay | Трос от топа мачты к носу, держит мачту вперёд |
-| **Ахтерштаг** | Backstay | Трос от топа мачты к корме |
-| **Ванты** | Shrouds | Тросы по бокам, держат мачту от бокового наклона |
-| **Бакштаги** | Running backstays | Дополнительные задние оттяжки (не на всех яхтах) |
-| **Краспицы** | Spreaders | Распорки на мачте, разводят ванты в стороны |
-| **Путенсы** | Chainplates | Крепления вант к корпусу |
+| Элемент | English | Function |
+|---------|---------|----------|
+| **Форштаг** | Forestay / Headstay | Wire from masthead to bow, supports mast forward |
+| **Ахтерштаг** | Backstay | Wire from masthead to stern |
+| **Ванты** | Shrouds | Side wires preventing lateral mast movement |
+| **Бакштаги** | Running backstays | Additional aft stays (not on all yachts) |
+| **Краспицы** | Spreaders | Struts on the mast that spread the shrouds outward |
+| **Путенсы** | Chainplates | Fittings that attach shrouds to the hull |
 
 ---
 
@@ -130,31 +130,31 @@
 
 Подвижные снасти для управления парусами.
 
-| Снасть | English | Функция |
-|--------|---------|---------|
-| **Грота-фал** | Main halyard | Поднимает грот |
-| **Стаксель-фал** | Jib halyard | Поднимает стаксель |
-| **Спинакер-фал** | Spinnaker halyard | Поднимает спинакер |
-| **Грота-шкот** | Mainsheet | Управляет углом грота (через гик) |
-| **Стаксель-шкот** | Jib sheet | Управляет углом стакселя |
-| **Оттяжка гика** | Boom vang / Kicker | Тянет гик вниз, контролирует twist |
-| **Каретка грота-шкота** | Mainsheet traveller | Перемещает точку крепления шкота по ширине |
-| **Топенант** | Topping lift | Поддерживает гик сверху |
-| **Завал-тали** | Cunningham | Натягивает переднюю шкаторину грота |
-| **Риф-шкентель** | Reefing line | Уменьшает площадь паруса (рифление) |
-| **Брас** | Guy / Brace | Управляет спинакер-гиком |
+| Снасть | English | Function |
+|--------|---------|----------|
+| **Грота-фал** | Main halyard | Hoists the mainsail |
+| **Стаксель-фал** | Jib halyard | Hoists the jib |
+| **Спинакер-фал** | Spinnaker halyard | Hoists the spinnaker |
+| **Грота-шкот** | Mainsheet | Controls mainsail angle (via boom) |
+| **Стаксель-шкот** | Jib sheet | Controls jib angle |
+| **Оттяжка гика** | Boom vang / Kicker | Pulls boom down, controls sail twist |
+| **Каретка грота-шкота** | Mainsheet traveller | Moves mainsheet attachment point athwartships |
+| **Топенант** | Topping lift | Supports the boom from above |
+| **Завал-тали** | Cunningham | Tensions the mainsail luff |
+| **Риф-шкентель** | Reefing line | Reduces sail area (reefing) |
+| **Брас** | Guy / Brace | Controls the spinnaker pole |
 
 ---
 
 ## 6. Рангоут (Spars)
 
-| Элемент | English | Что это |
-|---------|---------|---------|
-| **Мачта** | Mast | Вертикальная колонна для парусов |
-| **Гик** | Boom | Горизонтальная балка внизу грота |
-| **Спинакер-гик** | Spinnaker pole | Шест для растяжки спинакера |
-| **Бушприт** | Bowsprit | Выступающий за нос шест (для геннакера) |
-| **Гафель** | Gaff | Верхняя балка у гафельных парусов |
+| Элемент | English | Description |
+|---------|---------|-------------|
+| **Мачта** | Mast | Vertical spar carrying the sails |
+| **Гик** | Boom | Horizontal spar along the foot of the mainsail |
+| **Спинакер-гик** | Spinnaker pole | Pole used to extend the spinnaker |
+| **Бушприт** | Bowsprit | Spar extending forward from the bow (for gennaker) |
+| **Гафель** | Gaff | Upper spar on gaff-rigged sails |
 
 ---
 
@@ -180,23 +180,23 @@
         Корма (Stern)
 ```
 
-| Термин | English | Значение |
-|--------|---------|----------|
-| **Нос** | Bow | Передняя часть |
-| **Корма** | Stern | Задняя часть |
-| **Транец** | Transom | Плоская задняя стенка |
-| **Левый борт (ЛБ)** | Port | Левая сторона (если смотреть к носу) |
-| **Правый борт (ПБ)** | Starboard | Правая сторона |
-| **Бак** | Foredeck | Передняя палуба |
-| **Кокпит** | Cockpit | Открытая часть для экипажа |
-| **Рубка** | Cabin / Coachroof | Надстройка над каютой |
-| **Киль** | Keel | Подводный плавник с балластом |
-| **Перо руля** | Rudder blade | Подводная поворотная плоскость |
-| **Баллер руля** | Rudder stock | Ось вращения руля |
-| **Румпель** | Tiller | Рычаг управления рулём |
-| **Штурвал** | Wheel / Helm | Колесо управления рулём |
-| **Ватерлиния** | Waterline | Линия на границе воды |
-| **Привальный брус** | Rub rail | Защитная полоса по борту |
+| Термин | English | Meaning |
+|--------|---------|---------|
+| **Нос** | Bow | Forward end of the hull |
+| **Корма** | Stern | Aft end of the hull |
+| **Транец** | Transom | Flat surface at the stern |
+| **Левый борт (ЛБ)** | Port | Left side (looking forward) |
+| **Правый борт (ПБ)** | Starboard | Right side (looking forward) |
+| **Бак** | Foredeck | Forward deck area |
+| **Кокпит** | Cockpit | Open area where the crew sits |
+| **Рубка** | Cabin / Coachroof | Raised structure over the cabin |
+| **Киль** | Keel | Underwater fin with ballast |
+| **Перо руля** | Rudder blade | Underwater turning surface |
+| **Баллер руля** | Rudder stock | Rudder shaft / axis of rotation |
+| **Румпель** | Tiller | Steering lever attached to the rudder |
+| **Штурвал** | Wheel / Helm | Steering wheel |
+| **Ватерлиния** | Waterline | Line where hull meets the water |
+| **Привальный брус** | Rub rail | Protective strip along the hull side |
 
 ---
 
@@ -227,57 +227,57 @@
          (Running / Dead run)
 ```
 
-| Курс | English | Угол к ветру |
-|------|---------|--------------|
-| **Левентик** | In irons / Head to wind | 0° (прямо на ветер, нет хода) |
+| Курс | English | Angle to wind |
+|------|---------|---------------|
+| **Левентик** | In irons / Head to wind | 0° (directly into the wind, no way) |
 | **Крутой бейдевинд** | Close-hauled | ~30-45° |
 | **Полный бейдевинд** | Close reach | ~45-60° |
 | **Галфвинд** | Beam reach | ~90° |
 | **Бакштаг** | Broad reach | ~120-150° |
-| **Фордевинд** | Running / Dead run | ~180° (ветер строго сзади) |
+| **Фордевинд** | Running / Dead run | ~180° (wind directly astern) |
 
 ---
 
 ## 9. Маневры
 
-| Маневр | English | Описание |
-|--------|---------|----------|
-| **Оверштаг** | Tacking | Поворот носом через ветер |
-| **Фордевинд (поворот)** | Gybing / Jibing | Поворот кормой через ветер (осторожно - гик!) |
-| **Рифление** | Reefing | Уменьшение площади паруса |
-| **Лавировка** | Beating / Windward sailing | Движение к ветру зигзагами |
-| **Приведение** | Luffing / Heading up | Поворот ближе к ветру |
-| **Уваливание** | Bearing away | Поворот дальше от ветра |
+| Маневр | English | Description |
+|--------|---------|-------------|
+| **Оверштаг** | Tacking | Turning the bow through the wind |
+| **Фордевинд (поворот)** | Gybing / Jibing | Turning the stern through the wind (watch the boom!) |
+| **Рифление** | Reefing | Reducing sail area |
+| **Лавировка** | Beating / Windward sailing | Sailing upwind in a zigzag pattern |
+| **Приведение** | Luffing / Heading up | Turning closer to the wind |
+| **Уваливание** | Bearing away | Turning away from the wind |
 
 ---
 
 ## 10. Морские узлы (основные)
 
-| Узел | English | Применение |
-|------|---------|------------|
-| **Булинь** | Bowline | Незатягивающаяся петля |
-| **Восьмёрка** | Figure-eight | Стопорный узел на конце шкота |
-| **Штык** | Cleat hitch | Крепление на утку |
-| **Шкотовый** | Sheet bend | Соединение двух верёвок разной толщины |
-| **Рифовый (бантик)** | Reef knot | Рифление / связка одинаковых концов |
-| **Выбленочный** | Clove hitch | Крепление к рангоуту |
+| Узел | English | Use |
+|------|---------|-----|
+| **Булинь** | Bowline | Non-slip loop |
+| **Восьмёрка** | Figure-eight | Stopper knot at the end of a line |
+| **Штык** | Cleat hitch | Securing a line to a cleat |
+| **Шкотовый** | Sheet bend | Joining two lines of different diameter |
+| **Рифовый (бантик)** | Reef knot | Reefing / tying lines of equal size |
+| **Выбленочный** | Clove hitch | Fastening to a spar or post |
 
 ---
 
 ## 11. Палубное оборудование
 
-| Элемент | English | Функция |
-|---------|---------|---------|
-| **Лебёдка (Винч)** | Winch | Выбирает шкоты/фалы с усилием |
-| **Утка** | Cleat | Фиксирует конец (верёвку) |
-| **Блок** | Block / Pulley | Направляет и облегчает тягу |
-| **Стопор** | Clutch / Jammer | Зажимает конец без утки |
-| **Кнехт** | Bollard | Швартовная тумба |
-| **Киповая планка** | Fairlead | Направляет верёвку через фальшборт |
-| **Релинг** | Lifeline / Guardrail | Ограждение палубы |
-| **Леерное ограждение** | Stanchion + lifeline | Стойки + тросы безопасности |
-| **Люк** | Hatch | Проём в палубе |
-| **Степс** | Mast step | Основание мачты |
+| Элемент | English | Function |
+|---------|---------|----------|
+| **Лебёдка (Винч)** | Winch | Provides mechanical advantage for sheets/halyards |
+| **Утка** | Cleat | Secures a line in place |
+| **Блок** | Block / Pulley | Redirects and eases line pull |
+| **Стопор** | Clutch / Jammer | Holds a line without a cleat |
+| **Кнехт** | Bollard | Mooring post |
+| **Киповая планка** | Fairlead | Guides a line through the bulwark |
+| **Релинг** | Lifeline / Guardrail | Deck safety railing |
+| **Леерное ограждение** | Stanchion + lifeline | Upright posts + safety wires |
+| **Люк** | Hatch | Opening in the deck |
+| **Степс** | Mast step | Base fitting that supports the mast |
 
 ---
 
